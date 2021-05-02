@@ -162,11 +162,16 @@ main {
   .informacoes {
     width: 335px;
     text-align: center;
+    height: 54%;
     margin-right: 5%;
   }
   .data-da-imagem {
     font-size: 20px;
     text-align: center;
+  }
+  .descricao {
+    line-height: 1.2;
+    font-size: 12px;
   }
 }
 
