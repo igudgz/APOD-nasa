@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("https://wallpapershome.com/images/pages/pic_h/17812.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Space Mono", monospace;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+
+  font-size: 18px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.titulo-header {
+  margin-left: 8%;
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 85%;
+  height: 54rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 25%;
+  margin-left: 5%;
+  margin-top: 5%;
+  justify-content: space-between;
+  font-weight: bold;
+  width: 50%;
+
+  border-radius: 30%;
+}
+.elementos-form {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  width: 60%;
+  height: 30%;
+}
+
+.imagem {
+  width: 50%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+.img-nasa {
+  width: 100%;
+  border-radius: 40px;
+  animation: aparecer 1.5s;
+}
+.form-info {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.informacoes {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 5%;
+  margin-bottom: 5%;
+  height: 50%;
+  padding: 3%;
+  border-radius: 40px;
+  animation: aparecer 1.5s;
+}
+
+.footer {
+  height: 70px;
+  width: 100%;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+}
+
+.footer p {
+  margin-left: 8%;
+}
+/* Animação */
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Responsivo */
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  }
+  .titulo-header {
+    margin-left: 5%;
+    text-align: center;
+  }
+  .container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form-info {
+    flex-direction: column-reverse;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .formulario {
+    width: 85%;
+    margin-left: 5%;
+    align-items: center;
+  }
+  .imagem {
+    width: 100%;
+    height: 50%;
+  }
+  .informacoes {
+    width: 335px;
+    text-align: center;
+    margin-right: 5%;
+  }
+  .data-da-imagem {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  main {
+    font-size: 14px;
+  }
+  .formulario {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1441px) {
+  .img-nasa {
+    width: 80%;
+  }
+}
+
+@media (min-width: 2000px) {
+  main {
+    font-size: 20px;
+  }
+  .footer {
+    margin-top: 8%;
+    font-size: 22px;
+  }
+  .header {
+    height: 100px;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>APOD</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="titulo-header">Astronomy Picture Of The Day</p>
+    </header>
+    <main>
+      <div class="container">
+          <div class="imagem">
+            <img id="foto" class="img-nasa" src="" alt="">
+          </div>
+        <div class='form-info'>
+          <form class="formulario" action="">
+            <label class='data-da-imagem' for="data-da-imagem"
+              >Escolha uma data e veja a foto dela!</label>
+            <input
+              class="elementos-form"
+              type="date"
+              name="data-da-imagem"
+              id="input-data"
+            />
+            <button id="botao-data" class="elementos-form" type="submit">
+              Enviar!
+            </button>
+          </form> 
+            <div class="informacoes">
+              <h1 class="titulo" id="titulo"></h1>
+              <h2 class="data" id="data"></h2>
+              <p class="descricao" id=descricao></p>
+              <p class="copyright" id="copyright"></p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+      <p>Made by Francisco Igor</p></footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js-jquery.js"></script>
+  </body>
+</html>
