@@ -61,8 +61,8 @@ $("#botao-data").on("click", function () {
         $(".informacoes").html(`
                     <h1 class="titulo" id="titulo">Vic Marques</h1>
                     <h2 class="data" id="data">${dadosData.date}</h2>
-                    <p class="descricao" id='descricao'>Talvez o maior presente que já existiu para alguém,a pessoa que é de outro planeta, isso aqui é para mostrar para você que você é como uma foto espacial que admiramos achando que é ficção
-                    obrigado por tudo,te amo. </p>`);
+                    <h3 class="descricao" id='descricao'>Talvez o maior presente que já existiu para alguém,a pessoa que é de outro planeta, isso aqui é para mostrar para você que você é como uma foto espacial que admiramos achando que é ficção,
+                    obrigado por tudo,te amo. </h3>`);
       }
     },
     error: function (dados) {
