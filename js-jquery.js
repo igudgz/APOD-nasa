@@ -3,12 +3,27 @@ $.ajax({
   url:
     "https://api.nasa.gov/planetary/apod?api_key=0eOsg2igOv6jw1K1cuNUOoXkPThdMba36oEIBN14",
   success: function (dados) {
-    $(".imagem").html(`
-            <img id= 'foto'class="img-nasa" src="${dados.url}" alt="foto">`);
+    if (dados.media_type == "image") {
+      $(".video").addClass("oculto");
+      $(".imagem").html(`
+      <img id= 'foto'class="img-nasa" src="${dados.url}" alt="foto">`);
+    } else {
+      console.log("caiu");
+      $(".imagem").addClass("oculto");
+      $("#video").html(
+        `<iframe id='video' class='img-nasa' 'src="${dados.url}" frameborder="0"></iframe>`
+      );
+    }
+
     $(".informacoes").html(`
             <h1 class="titulo" id="titulo">${dados.title}</h1>
             <h2 class="data" id="data">${dados.date}</h2>
             <p class="descricao" id=descricao>${dados.explanation}</p>`);
+  },
+  error: function (dados) {
+    $(".imagem").addClass("oculto");
+    $(".form-info").addClass("oculto");
+    $(".erro").removeClass("oculto");
   },
 });
 
@@ -20,12 +35,35 @@ $("#botao-data").on("click", function () {
       `https://api.nasa.gov/planetary/apod?api_key=x8F9X3STEuI9ZuddX5uDz8Y0CGhyadWbmWQzZgQc&date=` +
       $("#input-data")[0].value,
     success: function (dadosData) {
-      $(".imagem").html(`
-            <img id= 'foto'class="img-nasa" src="${dadosData.url}" alt="foto">`);
+      if (dadosData.media_type == "image") {
+        $(".video").addClass("oculto");
+        $(".imagem").html(`
+        <img id= 'foto'class="img-nasa" src="${dadosData.url}" alt="foto">`);
+      } else {
+        $(".imagem").addClass("oculto");
+        $(".video").removeClass("oculto");
+
+        $(".video").html(
+          `<iframe width="560" height="315"  class='img-nasa' id='video'  src="${dadosData.url}" frameborder="0"></iframe>`
+        );
+      }
       $(".informacoes").html(`
             <h1 class="titulo" id="titulo">${dadosData.title}</h1>
             <h2 class="data" id="data">${dadosData.date}</h2>
             <p class="descricao" id=descricao>${dadosData.explanation}</p>`);
     },
+    error: function (dados) {
+      $(".imagem").addClass("oculto");
+      $(".form-info").addClass("oculto");
+      $(".erro").removeClass("oculto");
+    },
   });
+});
+
+//Evento erro.
+$(".botao-erro").on("click", () => {
+  $(".imagem").removeClass("oculto");
+  $(".form-info").removeClass("oculto");
+  $(".erro").addClass("oculto");
+  $(".video").addClass("oculto");
 });

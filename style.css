@@ -115,6 +115,10 @@ main {
 .footer p {
   margin-left: 8%;
 }
+
+.oculto {
+  display: none;
+}
 /* Animação */
 @keyframes aparecer {
   0% {
@@ -126,6 +130,26 @@ main {
     transform: translateX(0);
   }
 }
+
+.erro {
+  width: 60%;
+  height: 50%;
+  animation: aparecer 1.5s;
+  margin-top: 10%;
+  margin-right: 15%;
+}
+.botao-erro {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  padding: 1%;
+  width: 55%;
+  height: 10%;
+}
+
 /* Responsivo */
 @media (max-width: 700px) {
   main {
