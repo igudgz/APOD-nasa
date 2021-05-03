@@ -51,6 +51,19 @@ $("#botao-data").on("click", function () {
             <h1 class="titulo" id="titulo">${dadosData.title}</h1>
             <h2 class="data" id="data">${dadosData.date}</h2>
             <p class="descricao" id=descricao>${dadosData.explanation}</p>`);
+      //homenagem hihi
+      if (dadosData.date == "1996-07-11") {
+        console.log("caiu");
+        $(".video").addClass("oculto");
+        $(".imagem").html(`
+                <img id= 'foto'class="img-nasa" src="./images/vic.jpeg" alt="foto">`);
+
+        $(".informacoes").html(`
+                    <h1 class="titulo" id="titulo">Vic Marques</h1>
+                    <h2 class="data" id="data">${dadosData.date}</h2>
+                    <p class="descricao" id='descricao'>Talvez o maior presente que já existiu para alguém, essa homenagem é para mostrar para você que você é como uma foto espacial que admiramos achando que é ficção
+                    obrigado por tudo,te amo. </p>`);
+      }
     },
     error: function (dados) {
       $(".imagem").addClass("oculto");
