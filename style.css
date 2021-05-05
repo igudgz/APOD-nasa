@@ -226,10 +226,13 @@ main {
     font-size: 20px;
   }
   .footer {
-    margin-top: 8%;
+    margin-top: 12%;
     font-size: 22px;
   }
   .header {
     height: 100px;
+  }
+  .img-nasa {
+    width: 80%;
   }
 }

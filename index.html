@@ -17,47 +17,48 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="titulo-header">Astronomy Picture Of The Day</p>
+      <h1 class="titulo-header">Astronomy Picture Of The Day</h1>
     </header>
     <main>
       <div class="container">
-          <div class="imagem">
-            <img id="foto" class="img-nasa" src="" alt="foto">
-          </div>
-          <div class='imagem video'>
-            <iframe id='video' class='img-nasa'src="" frameborder="0"></iframe>
-          </div>
-        <div class='form-info'>
+        <div class="imagem">
+          <img id="foto" class="img-nasa" src="" alt="foto" />
+        </div>
+        <div class="imagem video">
+          <iframe id="video" class="img-nasa" src="" frameborder="0"></iframe>
+        </div>
+        <div class="form-info">
           <form class="formulario" action="">
-            <label class='data-da-imagem' for="data-da-imagem"
-              >Escolha uma data e veja a foto dela!</label>
+            <label class="data-da-imagem" for="data-da-imagem"
+              >Escolha uma data e veja a foto dela!</label
+            >
             <input
               class="elementos-form"
               type="date"
               name="data-da-imagem"
               id="input-data"
-              
             />
-            
+
             <button id="botao-data" class="elementos-form" type="submit">
               Enviar!
             </button>
-          </form> 
-            <div class="informacoes">
-              <h1 class="titulo" id="titulo"></h1>
-              <h2 class="data" id="data"></h2>
-              <p class="descricao" id=descricao></p>
-            </div>
+          </form>
+          <div class="informacoes">
+            <h1 class="titulo" id="titulo"></h1>
+            <h2 class="data" id="data"></h2>
+            <p class="descricao" id="descricao"></p>
+          </div>
         </div>
       </div>
-        <div class="descricao erro oculto">
-          <h1 class="erro">ERROR 404</h1>
-          <p>Página não encontrada.</p>
-          <button class='botao-erro'>Clique aqui para recarregar a página</button>
-        </div>
-      </main>
+      <div class="descricao erro oculto">
+        <h1 class="erro">ERROR 404</h1>
+        <p>Página não encontrada.</p>
+        <button class="botao-erro">Clique aqui para recarregar a página</button>
+      </div>
+    </main>
     <footer class="footer">
-      <p>Made by Francisco Igor</p></footer>
+      <p>Made by Francisco Igor</p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js-jquery.js"></script>
   </body>
