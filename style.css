@@ -72,6 +72,8 @@ main {
   border: none;
   width: 60%;
   height: 30%;
+  text-align: center;
+  margin-bottom: 2%;
 }
 
 .imagem {
@@ -90,6 +92,7 @@ main {
   height: 100%;
   display: flex;
   flex-direction: column;
+  color: white;
   justify-content: space-between;
 }
 .informacoes {
@@ -158,6 +161,9 @@ main {
     align-items: center;
     font-size: 10px;
   }
+  .container {
+    flex-direction: column-reverse;
+  }
   .titulo-header {
     margin-left: 1%;
     text-align: center;
@@ -186,7 +192,7 @@ main {
   .informacoes {
     width: 335px;
     text-align: center;
-    height: 55%;
+    height: 64%;
     margin-right: 5%;
   }
   .data-da-imagem {
