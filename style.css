@@ -217,7 +217,7 @@ main {
 
 @media (min-width: 1441px) {
   .img-nasa {
-    width: 70%;
+    width: 65%;
   }
 }
 
@@ -233,6 +233,6 @@ main {
     height: 100px;
   }
   .img-nasa {
-    width: 80%;
+    width: 65%;
   }
 }
